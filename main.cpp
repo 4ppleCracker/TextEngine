@@ -1,6 +1,8 @@
 #include <iostream>
-#include "Command.h"
+
+#include "TextEngine.h"
 #include "join.h"
+
 
 using namespace std;
 

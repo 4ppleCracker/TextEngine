@@ -22,11 +22,11 @@ class Command
     public:
         Command(std::string a_command);
         Command(std::string a_command, Setting settings);
-        std::string Save();
+        std::string Save() const;
         void Exec();
         void NewCommand(std::string a_command);
-        Targs getargs();
-        std::string getcommand();
+        Targs getargs() const;
+        std::string getcommand() const;
         void on(std::string com, std::function<void(Targs*)> callback);
     protected:
 

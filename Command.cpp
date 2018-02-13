@@ -38,7 +38,7 @@ void Command::NewCommand(std::string a_command)
     this->m_response = "";
 }
 
-std::string Command::Save()
+std::string Command::Save() const
 {
     std::string ret = "";
     ret += this->prefix;
@@ -49,11 +49,11 @@ std::string Command::Save()
     return ret;
 }
 
-std::vector<std::string> Command::getargs()
+std::vector<std::string> Command::getargs() const
 {
     return this->m_parsed->arguments;
 }
-std::string Command::getcommand()
+std::string Command::getcommand() const
 {
     return this->m_parsed->command;
 }
